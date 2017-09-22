@@ -1,7 +1,7 @@
 namespace Boleto2Net
 {
     /// <summary>
-    /// Representa o endereço do Cedente ou Sacado.
+    /// Representa o endereÃ§o do Cedente ou Sacado.
     /// </summary>
     public class Endereco
     {
@@ -18,7 +18,7 @@ namespace Boleto2Net
             var logradouroCompleto = string.Empty;
             if (LogradouroNumero.Length != 0)
                 logradouroCompleto += " " + LogradouroNumero;
-            if (LogradouroComplemento.Length != 0)
+            if (LogradouroComplemento != null && LogradouroComplemento.Length != 0)
                 logradouroCompleto += " " + LogradouroComplemento;
 
             if (tamanhoFinal == 0)
